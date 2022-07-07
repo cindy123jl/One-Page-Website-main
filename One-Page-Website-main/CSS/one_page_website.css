@@ -1,0 +1,384 @@
+html{
+    font-family: courier;
+    font: size 62.5%;
+    -webkit-tap-highlight-color: rgba(214, 62, 62, 0);
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+body{
+    font-size: 7;
+    margin: 0;
+    font-family: courier;
+    line-height: 1.42857143;
+    color: antiquewhite;
+    background-color: antiquewhite;
+}
+
+.menu{
+    color: black;
+}
+
+
+/*---------------------------------
+    HOME SECTION STYLES
+----------------------------------*/
+#home{
+    font: courier;
+    text-align: center;
+    color: black;
+    letter-spacing: 6pt;
+    word-spacing: 21pt;
+    padding-bottom:2%;
+}
+
+.head-main{
+    text-shadow: purple;
+    color: black;
+    font-size: 1.5em;
+    text-align: center;
+    font: courier;
+}
+
+/*--------------------------------
+    ABOUT
+---------------------------------*/
+#about{
+    font: courier;
+    text-align: center;
+    color: black;
+    padding-bottom:2%;
+}
+
+.h1{
+    font: courier;
+    text-align: center;
+    color: black;
+}
+
+.h3{
+    font: courier;
+    text-align: center;
+    color: lightblue;
+}
+
+.section p{
+    font: courier;
+    text-align:center;
+}
+
+
+/*---------------------------------
+    CONTACT STYLES
+---------------------------------*/
+
+#contact{
+    background-color: antiquewhite;
+}
+
+.contact{
+    width: 60%;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 0px auto;
+    background-color: antiquewhite;
+    box-shadow: -1px -1px 1px 0 rgba(0, 0, 0, 0.1), 1px 2px 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.contact p{
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+    color: black;
+    font-weight: 500;
+    font-size: 1.5em;
+    letter-spacing: 0pt;
+    word-spacing: 0pt;
+}
+
+.contact form{
+    font-size: 15px;
+    outline: none;
+    font-weight: 600;
+    color: #8d8e8f;
+    padding: 12px 12px;
+    width: 70%;
+    border: 1px solid #808080;
+    margin: 2% auto;
+    border-radius: 7px;
+    background-color: black;
+    box-shadow: 2px 3px 3px 0px rgba(0, 0, 0, 0.979);
+    font-family: 'Raleway', sans-serif;
+}
+
+.contact input[type="text"]{
+    font-size: 15px;
+    outline: none;
+    font-weight:600;
+    color: #000000;
+    padding: 2% 1% 2% 7%;
+    width: 80%;
+    border-top: 1px solid #090b0d;
+    border-right: 2px solid #424549;
+    border-bottom: 2px solid #424549;
+    border-left: 1px solid #090b0d;
+    margin: 10px 1em;
+    border-radius: 7px;
+    background: antiquewhite;
+    font-family: courier;
+}
+
+.contact input[type = "text"]:hover{
+    box-shadow: 0 0 18px rgb(219, 193, 158);
+}
+
+.form-spacer{
+    padding: 30px 39px;
+}
+
+.submit input[type="submit"]{
+    color:rgb(225, 225, 225);
+    cursor: pointer;
+    border: none;
+    font-weight: 900;
+    outline: none;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    margin: 0px 3%;
+    padding: 7px 0px;
+    width: 25%;
+    font-size: 18px;
+    transition: border-color 0.3s color 0.3s background-color 0.3s;
+    border-radius: 7px;
+    background-color: #000000;
+    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.3);
+}
+
+.submit input[type="submit"]:hover{
+    color: rgb(255, 255, 255);
+    background-color: #7a7a7a;
+    box-shadow: inset 1px 2px 15px 0 rgba(0, 0, 0, 0.5);
+}
+
+/*-----------------------------------------------
+   FOOTER STYLES
+-----------------------------------------------*/
+#footer{
+    color: #000;
+    text-shadow: 2px 2px 8px 0 (0, 0, 0, 0.4);
+    padding: 20px 50px 20px 50px;
+    text-align: right;
+}
+/*lightbox*/
+body{
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+}
+
+
+*{
+    box-sizing: border-box;
+}
+
+.row > .column{
+    padding: 0 8px;
+}
+
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column{
+    float: left;
+    width: 25%;
+}
+
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+}
+
+.modal-content{
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.close{
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus{
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.mySlides{
+    display: none;
+    
+}
+
+.cursor{
+    cursor: pointer;
+}
+
+.prev,
+.next{
+    cursor:pointer;
+    position:absolute;
+    top: 50%;
+    width:auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select:none;
+    -webkit-user-select: none;
+}
+
+.prev{
+    left:0;
+    border-radius: 3px 0 0 3px;
+}
+
+.next{
+    right:0;
+    border-radius:3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover{
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.numbertext{
+    color: orange;
+    font-weight: bold;
+    font-size:12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+img{
+    margin-bottom: -4px;
+    height: 320;
+    width: 320;
+}
+.caption-container{
+    text-align: center;
+    background-color: black;
+    padding:2px 16px;
+    color:white;
+}
+img.demo{
+    opacity:0.6;
+    height: 320;
+    width: 320;
+}
+
+.active,
+.demo:hover{
+    opacity: 1;
+}
+
+img.hover-shadow{
+    transition: 0.3s;
+}
+
+.hover-shadow:hover{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+/*----Modal-----*/
+
+* {
+  box-sizing: border-box;
+}
+
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 30%;
+  height: 30%
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
